@@ -13204,7 +13204,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pitches</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/2019-06-17_547888_Tanaka.csv&#39;</span><span class="p">)</span>
@@ -13221,7 +13221,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[44]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -13299,7 +13299,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13314,7 +13314,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pitch_types</span> <span class="o">=</span> <span class="n">pitches</span><span class="p">[</span><span class="s1">&#39;mlbam_pitch_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
@@ -13331,7 +13331,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13348,7 +13348,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span> <span class="n">COLORS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pitch_type</span><span class="p">,</span> <span class="s1">&#39;black&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">pitch_type</span> <span class="ow">in</span> <span class="n">pitches</span><span class="p">[</span><span class="s1">&#39;mlbam_pitch_name&#39;</span><span class="p">]]</span>
@@ -13361,7 +13361,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">pitches</span><span class="p">[</span><span class="s1">&#39;pfx_x&#39;</span><span class="p">],</span> <span class="n">pitches</span><span class="p">[</span><span class="s1">&#39;start_speed&#39;</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">)</span>
@@ -13380,7 +13380,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13412,7 +13412,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">pitches</span><span class="p">[</span><span class="s1">&#39;pfx_x&#39;</span><span class="p">],</span> <span class="n">pitches</span><span class="p">[</span><span class="s1">&#39;pfx_z&#39;</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">)</span>
@@ -13431,7 +13431,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13463,7 +13463,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_x</span> <span class="o">=</span> <span class="n">pitches</span><span class="p">[</span><span class="s1">&#39;pfx_x&#39;</span><span class="p">]</span>
@@ -13478,7 +13478,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="k">import</span> <span class="n">Axes3D</span>
@@ -13491,7 +13491,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -13509,13 +13509,13 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;mpl_toolkits.mplot3d.art3d.Path3DCollection at 0x1142e80f0&gt;</pre>
+<pre>&lt;mpl_toolkits.mplot3d.art3d.Path3DCollection at 0x11f9def98&gt;</pre>
 </div>
 
 </div>
@@ -13548,7 +13548,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cols_to_norm</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;start_speed&#39;</span><span class="p">,</span> <span class="s1">&#39;pfx_x&#39;</span><span class="p">,</span> <span class="s1">&#39;pfx_z&#39;</span><span class="p">]</span>
@@ -13561,7 +13561,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pitches</span><span class="p">[</span><span class="n">cols_to_norm</span><span class="p">]</span> <span class="o">=</span> <span class="n">pitches</span><span class="p">[</span><span class="n">cols_to_norm</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">x</span><span class="o">.</span><span class="n">min</span><span class="p">())</span> <span class="o">/</span> <span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">min</span><span class="p">()))</span>
@@ -13575,7 +13575,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pitches</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13591,7 +13591,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -13682,7 +13682,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
@@ -13695,7 +13695,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">start_speed</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">feature_column</span><span class="o">.</span><span class="n">numeric_column</span><span class="p">(</span><span class="s1">&#39;start_speed&#39;</span><span class="p">)</span>
@@ -13710,7 +13710,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">feat_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">start_speed</span><span class="p">,</span> <span class="n">pfx_x</span><span class="p">,</span> <span class="n">pfx_z</span><span class="p">]</span>
@@ -13730,7 +13730,7 @@ Data from <a href="http://www.brooksbaseball.net/">Brooks Baseball</a>.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pitches</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -13770,7 +13770,7 @@ memory usage: 3.8+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_data</span> <span class="o">=</span> <span class="n">pitches</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;mlbam_pitch_name&#39;</span><span class="p">,</span><span class="s1">&#39;pitch_type&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -13787,7 +13787,7 @@ memory usage: 3.8+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -13859,7 +13859,7 @@ memory usage: 3.8+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">labels</span> <span class="o">=</span> <span class="n">pitches</span><span class="p">[</span><span class="s1">&#39;pitch_type&#39;</span><span class="p">]</span>
@@ -13872,7 +13872,7 @@ memory usage: 3.8+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
@@ -13885,7 +13885,7 @@ memory usage: 3.8+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">x_data</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.33</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">101</span><span class="p">)</span>
@@ -13905,7 +13905,7 @@ memory usage: 3.8+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_func</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">pandas_input_fn</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y_train</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">num_epochs</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -13918,7 +13918,7 @@ memory usage: 3.8+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">linear_model</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">LinearClassifier</span><span class="p">(</span><span class="n">feature_columns</span><span class="o">=</span><span class="n">feat_cols</span><span class="p">,</span> <span class="n">n_classes</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">pitch_types</span><span class="p">))</span>
@@ -13939,8 +13939,8 @@ memory usage: 3.8+ KB
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>INFO:tensorflow:Using default config.
-WARNING:tensorflow:Using temporary folder as model directory: /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpdstkyast
-INFO:tensorflow:Using config: {&#39;_save_summary_steps&#39;: 100, &#39;_save_checkpoints_steps&#39;: None, &#39;_tf_random_seed&#39;: 1, &#39;_session_config&#39;: None, &#39;_keep_checkpoint_every_n_hours&#39;: 10000, &#39;_model_dir&#39;: &#39;/var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpdstkyast&#39;, &#39;_keep_checkpoint_max&#39;: 5, &#39;_log_step_count_steps&#39;: 100, &#39;_save_checkpoints_secs&#39;: 600}
+WARNING:tensorflow:Using temporary folder as model directory: /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpyyv97wkz
+INFO:tensorflow:Using config: {&#39;_save_checkpoints_steps&#39;: None, &#39;_model_dir&#39;: &#39;/var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpyyv97wkz&#39;, &#39;_save_checkpoints_secs&#39;: 600, &#39;_log_step_count_steps&#39;: 100, &#39;_tf_random_seed&#39;: 1, &#39;_session_config&#39;: None, &#39;_keep_checkpoint_every_n_hours&#39;: 10000, &#39;_keep_checkpoint_max&#39;: 5, &#39;_save_summary_steps&#39;: 100}
 </pre>
 </div>
 </div>
@@ -13951,7 +13951,7 @@ INFO:tensorflow:Using config: {&#39;_save_summary_steps&#39;: 100, &#39;_save_ch
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">linear_model</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">input_fn</span><span class="o">=</span><span class="n">input_func</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
@@ -13972,41 +13972,41 @@ INFO:tensorflow:Using config: {&#39;_save_summary_steps&#39;: 100, &#39;_save_ch
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>INFO:tensorflow:Create CheckpointSaverHook.
-INFO:tensorflow:Saving checkpoints for 1 into /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpdstkyast/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1 into /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpyyv97wkz/model.ckpt.
 INFO:tensorflow:step = 1, loss = 19.4591
-INFO:tensorflow:global_step/sec: 589.154
-INFO:tensorflow:step = 101, loss = 11.012872 (0.171 sec)
-INFO:tensorflow:global_step/sec: 587.578
-INFO:tensorflow:step = 201, loss = 9.161055 (0.170 sec)
-INFO:tensorflow:global_step/sec: 595.532
-INFO:tensorflow:step = 301, loss = 4.502223 (0.168 sec)
-INFO:tensorflow:global_step/sec: 624.119
-INFO:tensorflow:step = 401, loss = 11.858446 (0.160 sec)
-INFO:tensorflow:global_step/sec: 654.082
-INFO:tensorflow:step = 501, loss = 8.359846 (0.153 sec)
-INFO:tensorflow:global_step/sec: 586.737
-INFO:tensorflow:step = 601, loss = 9.235604 (0.170 sec)
-INFO:tensorflow:global_step/sec: 619.03
-INFO:tensorflow:step = 701, loss = 4.088436 (0.162 sec)
-INFO:tensorflow:global_step/sec: 631.924
-INFO:tensorflow:step = 801, loss = 3.36705 (0.159 sec)
-INFO:tensorflow:global_step/sec: 529.308
-INFO:tensorflow:step = 901, loss = 4.5563035 (0.187 sec)
-INFO:tensorflow:Saving checkpoints for 1000 into /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpdstkyast/model.ckpt.
-INFO:tensorflow:Loss for final step: 9.4168625.
+INFO:tensorflow:global_step/sec: 608.276
+INFO:tensorflow:step = 101, loss = 10.030265 (0.165 sec)
+INFO:tensorflow:global_step/sec: 618.628
+INFO:tensorflow:step = 201, loss = 8.143104 (0.162 sec)
+INFO:tensorflow:global_step/sec: 573.046
+INFO:tensorflow:step = 301, loss = 9.42222 (0.174 sec)
+INFO:tensorflow:global_step/sec: 596.99
+INFO:tensorflow:step = 401, loss = 9.90423 (0.167 sec)
+INFO:tensorflow:global_step/sec: 654.746
+INFO:tensorflow:step = 501, loss = 6.442497 (0.153 sec)
+INFO:tensorflow:global_step/sec: 587.109
+INFO:tensorflow:step = 601, loss = 10.633189 (0.173 sec)
+INFO:tensorflow:global_step/sec: 575.238
+INFO:tensorflow:step = 701, loss = 11.367533 (0.172 sec)
+INFO:tensorflow:global_step/sec: 624.504
+INFO:tensorflow:step = 801, loss = 7.041391 (0.160 sec)
+INFO:tensorflow:global_step/sec: 594.778
+INFO:tensorflow:step = 901, loss = 2.4444485 (0.168 sec)
+INFO:tensorflow:Saving checkpoints for 1000 into /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpyyv97wkz/model.ckpt.
+INFO:tensorflow:Loss for final step: 6.4268947.
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[27]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;tensorflow.python.estimator.canned.linear.LinearClassifier at 0x1a1e7c7cc0&gt;</pre>
+<pre>&lt;tensorflow.python.estimator.canned.linear.LinearClassifier at 0x1a29eefcc0&gt;</pre>
 </div>
 
 </div>
@@ -14017,7 +14017,7 @@ INFO:tensorflow:Loss for final step: 9.4168625.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dnn_model</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">DNNClassifier</span><span class="p">(</span><span class="n">feature_columns</span><span class="o">=</span><span class="n">feat_cols</span><span class="p">,</span> <span class="n">hidden_units</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span> <span class="n">n_classes</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">pitch_types</span><span class="p">))</span>
@@ -14038,8 +14038,8 @@ INFO:tensorflow:Loss for final step: 9.4168625.
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>INFO:tensorflow:Using default config.
-WARNING:tensorflow:Using temporary folder as model directory: /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpy60t3p5u
-INFO:tensorflow:Using config: {&#39;_save_summary_steps&#39;: 100, &#39;_save_checkpoints_steps&#39;: None, &#39;_tf_random_seed&#39;: 1, &#39;_session_config&#39;: None, &#39;_keep_checkpoint_every_n_hours&#39;: 10000, &#39;_model_dir&#39;: &#39;/var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpy60t3p5u&#39;, &#39;_keep_checkpoint_max&#39;: 5, &#39;_log_step_count_steps&#39;: 100, &#39;_save_checkpoints_secs&#39;: 600}
+WARNING:tensorflow:Using temporary folder as model directory: /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpxjwyuxsb
+INFO:tensorflow:Using config: {&#39;_save_checkpoints_steps&#39;: None, &#39;_model_dir&#39;: &#39;/var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpxjwyuxsb&#39;, &#39;_save_checkpoints_secs&#39;: 600, &#39;_log_step_count_steps&#39;: 100, &#39;_tf_random_seed&#39;: 1, &#39;_session_config&#39;: None, &#39;_keep_checkpoint_every_n_hours&#39;: 10000, &#39;_keep_checkpoint_max&#39;: 5, &#39;_save_summary_steps&#39;: 100}
 </pre>
 </div>
 </div>
@@ -14050,7 +14050,7 @@ INFO:tensorflow:Using config: {&#39;_save_summary_steps&#39;: 100, &#39;_save_ch
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dnn_model</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">input_fn</span><span class="o">=</span><span class="n">input_func</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
@@ -14071,41 +14071,41 @@ INFO:tensorflow:Using config: {&#39;_save_summary_steps&#39;: 100, &#39;_save_ch
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>INFO:tensorflow:Create CheckpointSaverHook.
-INFO:tensorflow:Saving checkpoints for 1 into /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpy60t3p5u/model.ckpt.
-INFO:tensorflow:step = 1, loss = 19.344791
-INFO:tensorflow:global_step/sec: 610.718
-INFO:tensorflow:step = 101, loss = 2.6467748 (0.165 sec)
-INFO:tensorflow:global_step/sec: 591.614
-INFO:tensorflow:step = 201, loss = 8.49828 (0.169 sec)
-INFO:tensorflow:global_step/sec: 614.496
-INFO:tensorflow:step = 301, loss = 9.876283 (0.163 sec)
-INFO:tensorflow:global_step/sec: 573.727
-INFO:tensorflow:step = 401, loss = 5.035324 (0.175 sec)
-INFO:tensorflow:global_step/sec: 561.176
-INFO:tensorflow:step = 501, loss = 4.9635925 (0.178 sec)
-INFO:tensorflow:global_step/sec: 590.888
-INFO:tensorflow:step = 601, loss = 1.7551861 (0.169 sec)
-INFO:tensorflow:global_step/sec: 601.775
-INFO:tensorflow:step = 701, loss = 4.190822 (0.166 sec)
-INFO:tensorflow:global_step/sec: 592.523
-INFO:tensorflow:step = 801, loss = 1.6823535 (0.169 sec)
-INFO:tensorflow:global_step/sec: 581.801
-INFO:tensorflow:step = 901, loss = 6.599282 (0.173 sec)
-INFO:tensorflow:Saving checkpoints for 1000 into /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpy60t3p5u/model.ckpt.
-INFO:tensorflow:Loss for final step: 5.0693583.
+INFO:tensorflow:Saving checkpoints for 1 into /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpxjwyuxsb/model.ckpt.
+INFO:tensorflow:step = 1, loss = 19.246891
+INFO:tensorflow:global_step/sec: 587.699
+INFO:tensorflow:step = 101, loss = 6.7308846 (0.171 sec)
+INFO:tensorflow:global_step/sec: 585.563
+INFO:tensorflow:step = 201, loss = 4.717022 (0.171 sec)
+INFO:tensorflow:global_step/sec: 594.417
+INFO:tensorflow:step = 301, loss = 5.4684024 (0.168 sec)
+INFO:tensorflow:global_step/sec: 597.153
+INFO:tensorflow:step = 401, loss = 7.000417 (0.168 sec)
+INFO:tensorflow:global_step/sec: 627.062
+INFO:tensorflow:step = 501, loss = 3.6366892 (0.159 sec)
+INFO:tensorflow:global_step/sec: 604.28
+INFO:tensorflow:step = 601, loss = 5.8083935 (0.166 sec)
+INFO:tensorflow:global_step/sec: 613.456
+INFO:tensorflow:step = 701, loss = 3.27341 (0.166 sec)
+INFO:tensorflow:global_step/sec: 617.879
+INFO:tensorflow:step = 801, loss = 4.890299 (0.159 sec)
+INFO:tensorflow:global_step/sec: 547.091
+INFO:tensorflow:step = 901, loss = 2.546061 (0.183 sec)
+INFO:tensorflow:Saving checkpoints for 1000 into /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpxjwyuxsb/model.ckpt.
+INFO:tensorflow:Loss for final step: 4.399426.
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[29]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;tensorflow.python.estimator.canned.dnn.DNNClassifier at 0x1a1e7e2278&gt;</pre>
+<pre>&lt;tensorflow.python.estimator.canned.dnn.DNNClassifier at 0x1a2a4a4d68&gt;</pre>
 </div>
 
 </div>
@@ -14123,7 +14123,7 @@ INFO:tensorflow:Loss for final step: 5.0693583.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">eval_input_func</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">pandas_input_fn</span><span class="p">(</span>
@@ -14142,7 +14142,7 @@ INFO:tensorflow:Loss for final step: 5.0693583.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">linear_results</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">eval_input_func</span><span class="p">)</span>
@@ -14162,10 +14162,10 @@ INFO:tensorflow:Loss for final step: 5.0693583.
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>INFO:tensorflow:Starting evaluation at 2019-07-19-11:11:37
-INFO:tensorflow:Restoring parameters from /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpdstkyast/model.ckpt-1000
-INFO:tensorflow:Finished evaluation at 2019-07-19-11:11:38
-INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.71875, average_loss = 0.95726985, global_step = 1000, loss = 7.658159
+<pre>INFO:tensorflow:Starting evaluation at 2019-07-19-11:23:05
+INFO:tensorflow:Restoring parameters from /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpyyv97wkz/model.ckpt-1000
+INFO:tensorflow:Finished evaluation at 2019-07-19-11:23:06
+INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.71875, average_loss = 0.9591996, global_step = 1000, loss = 7.673597
 </pre>
 </div>
 </div>
@@ -14176,7 +14176,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.71875, average_lo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">linear_results</span>
@@ -14192,16 +14192,16 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.71875, average_lo
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[32]:</div>
+    <div class="prompt output_prompt">Out[31]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
 <pre>{&#39;accuracy&#39;: 0.71875,
- &#39;average_loss&#39;: 0.95726985,
+ &#39;average_loss&#39;: 0.9591996,
  &#39;global_step&#39;: 1000,
- &#39;loss&#39;: 7.658159}</pre>
+ &#39;loss&#39;: 7.673597}</pre>
 </div>
 
 </div>
@@ -14212,7 +14212,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.71875, average_lo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dnn_results</span> <span class="o">=</span> <span class="n">dnn_model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">eval_input_func</span><span class="p">)</span>
@@ -14232,10 +14232,10 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.71875, average_lo
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>INFO:tensorflow:Starting evaluation at 2019-07-19-11:11:38
-INFO:tensorflow:Restoring parameters from /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpy60t3p5u/model.ckpt-1000
-INFO:tensorflow:Finished evaluation at 2019-07-19-11:11:39
-INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_loss = 0.79415286, global_step = 1000, loss = 6.353223
+<pre>INFO:tensorflow:Starting evaluation at 2019-07-19-11:23:07
+INFO:tensorflow:Restoring parameters from /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpxjwyuxsb/model.ckpt-1000
+INFO:tensorflow:Finished evaluation at 2019-07-19-11:23:07
+INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_loss = 0.7265939, global_step = 1000, loss = 5.8127513
 </pre>
 </div>
 </div>
@@ -14246,7 +14246,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_lo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dnn_results</span>
@@ -14262,16 +14262,16 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_lo
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[34]:</div>
+    <div class="prompt output_prompt">Out[33]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
 <pre>{&#39;accuracy&#39;: 0.84375,
- &#39;average_loss&#39;: 0.79415286,
+ &#39;average_loss&#39;: 0.7265939,
  &#39;global_step&#39;: 1000,
- &#39;loss&#39;: 6.353223}</pre>
+ &#39;loss&#39;: 5.8127513}</pre>
 </div>
 
 </div>
@@ -14289,7 +14289,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_lo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pred_input_func</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">pandas_input_fn</span><span class="p">(</span>
@@ -14307,7 +14307,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_lo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">linear_predictions</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">linear_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">pred_input_func</span><span class="p">))</span>
@@ -14327,7 +14327,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_lo
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>INFO:tensorflow:Restoring parameters from /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpdstkyast/model.ckpt-1000
+<pre>INFO:tensorflow:Restoring parameters from /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpyyv97wkz/model.ckpt-1000
 </pre>
 </div>
 </div>
@@ -14338,7 +14338,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_lo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">linear_probabilities</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span> <span class="nb">round</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pred</span><span class="p">[</span><span class="s1">&#39;probabilities&#39;</span><span class="p">]</span> <span class="p">]</span> <span class="k">for</span> <span class="n">pred</span> <span class="ow">in</span> <span class="n">linear_predictions</span> <span class="p">]</span>
@@ -14352,7 +14352,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_lo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dnn_predictions</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">dnn_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">pred_input_func</span><span class="p">))</span>
@@ -14372,7 +14372,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_lo
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>INFO:tensorflow:Restoring parameters from /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpy60t3p5u/model.ckpt-1000
+<pre>INFO:tensorflow:Restoring parameters from /var/folders/kb/s3s7jjy90yx_6r9ztgl83y_m0000gp/T/tmpxjwyuxsb/model.ckpt-1000
 </pre>
 </div>
 </div>
@@ -14383,7 +14383,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_lo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dnn_probabilities</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span> <span class="nb">round</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pred</span><span class="p">[</span><span class="s1">&#39;probabilities&#39;</span><span class="p">]</span> <span class="p">]</span> <span class="k">for</span> <span class="n">pred</span> <span class="ow">in</span> <span class="n">dnn_predictions</span> <span class="p">]</span>
@@ -14397,7 +14397,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_lo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">linear_predicted_pitches</span> <span class="o">=</span> <span class="p">[</span> <span class="n">PITCH_TYPE_LABELS</span><span class="p">[</span><span class="n">pitch_types</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">linear_predicted_types</span> <span class="p">]</span>
@@ -14410,7 +14410,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_lo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dnn_predicted_pitches</span> <span class="o">=</span> <span class="p">[</span> <span class="n">PITCH_TYPE_LABELS</span><span class="p">[</span><span class="n">pitch_types</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">dnn_predicted_types</span> <span class="p">]</span>
@@ -14423,7 +14423,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_lo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">actual_pitches</span> <span class="o">=</span> <span class="p">[</span> <span class="n">PITCH_TYPE_LABELS</span><span class="p">[</span><span class="n">labeled_type</span><span class="p">]</span> <span class="k">for</span> <span class="n">labeled_type</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">pitches</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">X_test</span><span class="o">.</span><span class="n">index</span><span class="p">][</span><span class="s1">&#39;mlbam_pitch_name&#39;</span><span class="p">])</span> <span class="p">]</span>
@@ -14436,7 +14436,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_lo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">comparison</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span> <span class="s1">&#39;actual&#39;</span><span class="p">:</span> <span class="n">actual_pitches</span><span class="p">,</span> <span class="s1">&#39;linear&#39;</span><span class="p">:</span> <span class="n">linear_predicted_pitches</span><span class="p">,</span> <span class="s1">&#39;dnn&#39;</span><span class="p">:</span> <span class="n">dnn_predicted_pitches</span> <span class="p">})</span>
@@ -14453,7 +14453,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_lo
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[43]:</div>
+    <div class="prompt output_prompt">Out[42]:</div>
 
 
 
@@ -14528,7 +14528,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_lo
       <th>7</th>
       <td>changeup</td>
       <td>split-fingered fastball</td>
-      <td>split-fingered fastball</td>
+      <td>four-seam fastball</td>
     </tr>
     <tr>
       <th>8</th>
@@ -14540,7 +14540,7 @@ INFO:tensorflow:Saving dict for global step 1000: accuracy = 0.84375, average_lo
       <th>9</th>
       <td>slider</td>
       <td>split-fingered fastball</td>
-      <td>split-fingered fastball</td>
+      <td>four-seam fastball</td>
     </tr>
     <tr>
       <th>10</th>
